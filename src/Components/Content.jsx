@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../assets/css/Content.css";
 
 const Content = () => {
   const [displayText, setDisplayText] = useState("");
@@ -7,10 +8,12 @@ const Content = () => {
     setDisplayText(document.getElementById("text-area").value);
   };
   return (
-    <div>
+    <div className="main-content">
       <textarea id="text-area"></textarea>
-      <button onClick={handleButtonClick}>Display Text</button>
-      {displayText && <p>{displayText}</p>}
+      <button id="displayTextBtn" onClick={handleButtonClick}>
+        Display Text
+      </button>
+      {displayText && <p id="underBtnText">{displayText}</p>}
     </div>
   );
 };

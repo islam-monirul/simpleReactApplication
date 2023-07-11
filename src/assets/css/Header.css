@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  background-color: black;
+
+  padding: 20px 10px;
+}
+
+#title {
+  color: crimson;
+  text-align: center;
+}
